@@ -1915,9 +1915,10 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			font-family: 'Arvo';
+			font-family: 'Cinzel';
 			font-weight: 700;
-			color: #ed786a;
+			color: #876331;
+			line-height: 1.25em;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
