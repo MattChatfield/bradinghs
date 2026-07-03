@@ -9,10 +9,12 @@
 */
 
 :root {
-  --primary-colour: #5da26c;
+  --primary-colour: #48A94A;
   --text-main: #474747;
-  --hover-colour: rgba(80, 159, 70);
+  --hover-colour: #92C148;
   --border-light: #7a7a7a;
+  --header-light: #fff;
+  --active-colour: #A46E44;
 }
 
 html,
@@ -282,7 +284,7 @@ a:hover {
 }
 
 a:hover strong {
-  color: var (--hover-colour);
+  color: var(--hover-colour);
 }
 
 strong,
@@ -1888,7 +1890,7 @@ button,
   -webkit-appearance: none;
   position: relative;
   display: inline-block;
-  background: var (--hover-colour);
+  background: var(--primary-colour);
   color: #fff !important;
   text-transform: uppercase;
   border-radius: 4px;
@@ -1919,7 +1921,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-  background: #fd887a;
+  background: var(--hover-colour);
 }
 
 input[type="button"]:active,
@@ -1927,7 +1929,34 @@ input[type="submit"]:active,
 input[type="reset"]:active,
 button:active,
 .button:active {
-  background: var (--hover-colour);
+  background: var(--active-colour);
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--primary-colour);
+  color: #fff;
+  border: 0;
+  outline: 0;
+  box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#myBtn i {
+  font-size: 1.2rem;
+  line-height: 3.5rem;
+}
+
+#myBtn:hover {
+  background: var(--hover-colour);
 }
 
 input[type="button"].alt,
@@ -2099,14 +2128,14 @@ button.alt:active,
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
-  color: #777;
+  color: var(--header-light);
   outline: 0;
   display: block;
 }
 
 #nav > ul > li > a:before {
   display: inline-block;
-  background: #878787;
+  background: var(--primary-colour);
   color: #e4e4e4;
   width: 2.25em;
   font-size: 0.8em;
@@ -2140,7 +2169,9 @@ button.alt:active,
   -ms-transition: color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out;
   font-size: 0.85em;
+  font-weight: 900;
   letter-spacing: 3px;
+  text-shadow: 0 0px 6px rgba(0, 0, 0, 0.8);
 }
 
 #nav > ul > li > ul {
@@ -2149,20 +2180,20 @@ button.alt:active,
 
 #nav > ul > li.active > a:before,
 #nav > ul > li:hover > a:before {
-  background: var (--hover-colour);
-  color: #fff;
+  background: var(--hover-colour);
+  color: var(--header-light)
 }
 
 #nav > ul > li.active > a > span,
 #nav > ul > li:hover > a > span {
-  color: var (--hover-colour);
+  color: var(--hover-colour);
 }
 
 .dropotron {
   text-align: left;
   border: solid 1px #e5e5e5;
   border-radius: 4px;
-  background: #fff;
+  background: var(--header-light)
   background: rgba(255, 255, 255, 0.965);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   padding: 0.75em 0 0.5em 0;
@@ -2233,7 +2264,7 @@ button.alt:active,
   transition:
     color 0.25s ease-in-out,
     border-bottom-color 0.25s ease-in-out;
-  color: var (--hover-colour);
+  color: var(--hover-colour);
 }
 
 /* Features */
@@ -2247,7 +2278,8 @@ button.alt:active,
 }
 
 #features p {
-  text-align: center;
+  text-align: justify;
+  margin-bottom: 0.5em;
 }
 
 #features ul.actions {
@@ -2269,7 +2301,7 @@ button.alt:active,
     inset 0px 8px 0px 0px #fff;
   position: relative;
   text-transform: uppercase;
-  background: url("../../images/banner.jpg");
+  background: url("../../images/bhs-home-1.jpg");
   background-size: cover;
   padding: 10em 0;
 }
@@ -2402,6 +2434,8 @@ button.alt:active,
   text-align: center;
   margin-top: 6em;
   padding-top: 4em;
+  font-size:x-small;
+
 }
 
 /* XLarge */
@@ -2874,6 +2908,7 @@ button.alt:active,
 
   /* Copyright */
 
+
   #copyright .links {
     margin-bottom: 0;
   }
@@ -2883,5 +2918,6 @@ button.alt:active,
     padding-left: 0;
     margin-left: 0;
     border-left: 0;
+
   }
 }
