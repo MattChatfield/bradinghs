@@ -2079,6 +2079,30 @@ button.alt:active,
   z-index: 1;
 }
 
+.about-page #header {
+  min-height: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 736px) {
+  .about-page #header {
+    min-height: 100px;
+    height: 100px;
+  }
+}
+
+.about-page #header > .container {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0px -8px 0px 0px rgba(0, 0, 0, 0.08),
+    inset 0px -10px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
 #header h1 {
   font-family: "Cinzel";
   font-weight: 700;
