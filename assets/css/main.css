@@ -2079,7 +2079,7 @@ button.alt:active,
   z-index: 1;
 }
 
-.about-page #header {
+.content-page #header {
   min-height: 200px;
   height: 200px;
 }
@@ -2101,6 +2101,42 @@ button.alt:active,
   box-shadow:
     inset 0px -8px 0px 0px rgba(0, 0, 0, 0.08),
     inset 0px -10px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Intro split section: two-column 60/40 on desktop, stacked with image on top on small screens */
+#intro-split {
+  padding: 4em 0;
+}
+
+#intro-split .split {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+#intro-split .split-image {
+  flex: 0 0 40%;
+}
+
+#intro-split .split-text {
+  flex: 1 1 60%;
+}
+
+#intro-split .split-image .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 980px) {
+  #intro-split .split {
+    flex-direction: column;
+  }
+  #intro-split .split-image,
+  #intro-split .split-text {
+    flex: none;
+    width: 100%;
+  }
 }
 
 #header h1 {
@@ -2127,6 +2163,8 @@ button.alt:active,
   color: #ffffff;
   text-shadow: 0 0px 6px rgba(0, 0, 0, 0.8);
 }
+
+
 
 /* Nav */
 
