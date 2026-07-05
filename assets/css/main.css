@@ -1607,7 +1607,7 @@ article:last-child {
   -ms-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
   display: inline-block;
-  border: solid 6px #ebebeb !important;
+  /* border: solid 6px #ebebeb !important; */
 }
 
 .image:hover {
@@ -1617,6 +1617,7 @@ article:last-child {
 .image img {
   display: block;
   width: 100%;
+  max-width: 100%;
 }
 
 .image.fit {
@@ -2111,6 +2112,7 @@ button.alt:active,
   text-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
   font-size: 2em;
   letter-spacing: 6px;
+  padding-bottom: 1.25em;
 
 }
 
@@ -2136,6 +2138,7 @@ button.alt:active,
 
 #intro-split .split-image .image img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
