@@ -1,0 +1,166 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bradinghorticulturalsociety.org.uk/#organization",
+      "name": "Brading Horticultural Society",
+      "url": "https://bradinghorticulturalsociety.org.uk",
+      "logo": "https://bradinghorticulturalsociety.org.uk/images/bhs-long-logo-1.png",
+      "description": "A society dedicated to the promotion and preservation of horticultural knowledge and practices in and around Brading, Isle of Wight. Brading Horticultural Society has been part of local life in Brading for generations, bringing people together to share a love of gardening, growing, and community.",
+      "image": "https://bradinghorticulturalsociety.org.uk/images/bhs-logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Brading",
+        "addressRegion": "Isle of Wight",
+        "addressCountry": "GB"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "General Enquiries",
+          "telephone": "+44-7895-540494",
+          "name": "Jo",
+          "contactOption": "TollFree"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "General Enquiries",
+          "telephone": "+44-1983-339933",
+          "name": "Steph"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "Email",
+          "email": "hello@bradinghorticulturalsociety.org.uk",
+          "contactOption": "EmailPreferred"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/bradinghorticulturalsociety",
+        "https://www.instagram.com/bradinghorticulturalsociety"
+      ],
+      "foundingDate": "1940",
+      "knowsAbout": [
+        "Gardening",
+        "Horticulture",
+        "Floriculture",
+        "Vegetable Growing",
+        "Community Events"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Brading",
+        "addressCountry": "GB"
+      },
+      "event": [
+        {
+          "@id": "https://bradinghorticulturalsociety.org.uk/#event-jumble-sale-2026"
+        },
+        {
+          "@id": "https://bradinghorticulturalsociety.org.uk/#event-horticultural-show-2026"
+        }
+      ]
+    },
+    {
+      "@type": "Event",
+      "@id": "https://bradinghorticulturalsociety.org.uk/#event-jumble-sale-2026",
+      "name": "Jumble Sale",
+      "description": "Annual jumble sale featuring donations and refreshments. Doors open at 2:00 PM with coffee and cakes available.",
+      "startDate": "2026-08-15T14:00:00+01:00",
+      "endDate": "2026-08-15T17:00:00+01:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "organizer": {
+        "@id": "https://bradinghorticulturalsociety.org.uk/#organization"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "St. Marys Church Hall",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "St. Marys Church Hall",
+          "addressLocality": "Brading",
+          "addressRegion": "Isle of Wight",
+          "postalCode": "PO36 0ED",
+          "addressCountry": "GB"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 50.7373,
+          "longitude": -1.1403
+        }
+      },
+      "url": "https://bradinghorticulturalsociety.org.uk/events.html#event-1",
+      "image": "https://bradinghorticulturalsociety.org.uk/images/bhs-long-logo-1.png",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://bradinghorticulturalsociety.org.uk/events.html#event-1",
+        "price": "0",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "performer": {
+        "@type": "Organization",
+        "@id": "https://bradinghorticulturalsociety.org.uk/#organization"
+      }
+    },
+    {
+      "@type": "Event",
+      "@id": "https://bradinghorticulturalsociety.org.uk/#event-horticultural-show-2026",
+      "name": "Brading Horticultural Society Show 2026",
+      "description": "The annual Brading Horticultural Society Show celebrating the best of local produce, flowers, crafts and home-made goods. Doors open at 2:00 PM with prizes presented at 3:30 PM.",
+      "startDate": "2026-09-05T14:00:00+01:00",
+      "endDate": "2026-09-05T17:00:00+01:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "organizer": {
+        "@id": "https://bradinghorticulturalsociety.org.uk/#organization"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "Brading Youth & Community Centre",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Brading Youth & Community Centre",
+          "addressLocality": "Brading",
+          "addressRegion": "Isle of Wight",
+          "addressCountry": "GB"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 50.7373,
+          "longitude": -1.1403
+        }
+      },
+      "url": "https://bradinghorticulturalsociety.org.uk/events.html#event-2",
+      "image": "https://bradinghorticulturalsociety.org.uk/images/bhs-show-image-1.png",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://bradinghorticulturalsociety.org.uk/events.html#event-2",
+        "price": "0.20",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "performer": {
+        "@type": "Organization",
+        "@id": "https://bradinghorticulturalsociety.org.uk/#organization"
+      },
+      "isPartOf": {
+        "@type": "Series",
+        "name": "Annual Brading Horticultural Society Show",
+        "description": "Annual show running for over eighty years celebrating local produce, flowers, crafts and home-made goods"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bradinghorticulturalsociety.org.uk/#website",
+      "url": "https://bradinghorticulturalsociety.org.uk",
+      "name": "Brading Horticultural Society",
+      "description": "Brading Horticultural Society - A society dedicated to the promotion and preservation of horticultural knowledge and practices in Brading, Isle of Wight",
+      "publisher": {
+        "@id": "https://bradinghorticulturalsociety.org.uk/#organization"
+      }
+    }
+  ]
+}
