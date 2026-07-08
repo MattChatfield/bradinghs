@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
 
 /*
-	Strongly Typed by HTML5 UP
+	Template: Strongly Typed by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 	This site by: Matthew Chatfield
@@ -2748,23 +2748,23 @@ button.alt:active,
     top: 0;
     width: 275px;
     z-index: 10002;
-    background: #444;
+    background: var(--header-light);
     border-right: solid 2px #3c3c3c;
     font-weight: 400;
     text-transform: uppercase;
-    color: #888;
+    color: var(--text-main);
     letter-spacing: 2px;
-    font-size: 0.85em;
+    font-size: 1.5em;
   }
 
   #navPanel .link {
     display: block;
-    color: #ddd;
+    color: var(--primary-colour);
     text-decoration: none;
     height: 44px;
     line-height: 44px;
     border: 0;
-    border-top: solid 1px #3c3c3c;
+    border-top: solid 1px var(--header-light);
     padding: 0 1em 0 1em;
   }
 
@@ -2774,7 +2774,7 @@ button.alt:active,
 
   #navPanel .link.depth-0 {
     font-weight: 600;
-    color: #fff;
+    color: var(--primary-colour);
   }
 
   #navPanel .indent-1 {
