@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Generated site files
+*.cache/
+.cache/
+
+# Optional: asset versioning or temporary files
+*.tmp
+*.bak
+*.log
