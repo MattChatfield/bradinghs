@@ -2061,7 +2061,7 @@ button.alt:active,
 #header {
   position: relative;
   text-align: center;
-  background: #333 url("../../images/bhs-hero-1.jpg") no-repeat center center;
+  background: #333 url("../../images/hydrangeas-viv-hero.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -2278,7 +2278,7 @@ button.alt:active,
   text-align: left;
   border: solid 1px #e5e5e5;
   border-radius: 4px;
-  background: var(--header-light)
+  background: var(--header-light);
   background: rgba(255, 255, 255, 0.965);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   padding: 0.75em 0 0.5em 0;
@@ -2386,7 +2386,7 @@ button.alt:active,
     inset 0px 8px 0px 0px #fff;
   position: relative;
   text-transform: uppercase;
-  background: url("../../images/bhs-home-1.jpg");
+  background: url("../../images/bhs-show-1.jpg");
   background-size: cover;
   padding: 10em 0;
 }
