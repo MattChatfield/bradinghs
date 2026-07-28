@@ -3053,6 +3053,37 @@ button.alt:active,
   border-bottom-color: var(--primary-colour);
 }
 
+.event-tabs li {
+  display: inline-flex;
+  flex: 1 1 auto;
+  min-width: 140px;
+}
+
+.event-tab-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .event-tabs {
+    justify-content: stretch;
+    gap: 0.5em;
+  }
+
+  .event-tabs li {
+    flex: 1 1 calc(50% - 0.5em);
+    min-width: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .event-tabs li {
+    flex: 1 1 100%;
+  }
+}
+
 .events-grid {
   display: grid;
   grid-template-columns: 1fr;
