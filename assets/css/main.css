@@ -9,12 +9,12 @@
 */
 
 :root {
-  --primary-colour: #48A94A;
+  --primary-colour: #48a94a;
   --text-main: #474747;
-  --hover-colour: #92C148;
+  --hover-colour: #92c148;
   --border-light: #7a7a7a;
   --header-light: #fff;
-  --active-colour: #A46E44;
+  --active-colour: #a46e44;
 }
 
 html,
@@ -2061,7 +2061,8 @@ button.alt:active,
 #header {
   position: relative;
   text-align: center;
-  background: #333 url("../../images/hydrangeas-viv-hero.jpg") no-repeat center center;
+  background: #333 url("../../images/hydrangeas-viv-hero.jpg") no-repeat center
+    center;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -2121,9 +2122,7 @@ button.alt:active,
   font-size: 2em;
   letter-spacing: 6px;
   padding-bottom: 1.25em;
-
 }
-
 
 /* Intro split section: two-column 60/40 on desktop, stacked with image on top on small screens */
 #intro-split {
@@ -2186,8 +2185,6 @@ button.alt:active,
   color: #ffffff;
   text-shadow: 0 0px 6px rgba(0, 0, 0, 0.8);
 }
-
-
 
 /* Nav */
 
@@ -2266,12 +2263,18 @@ button.alt:active,
 #nav > ul > li.active > a:before,
 #nav > ul > li:hover > a:before {
   background: var(--hover-colour);
-  color: var(--header-light)
+  color: var(--header-light);
 }
 
 #nav > ul > li.active > a > span,
 #nav > ul > li:hover > a > span {
   color: var(--hover-colour);
+}
+
+#nav > ul > li > ul li.active > a,
+#nav > ul > li > ul li > a:hover {
+  background: var(--hover-colour);
+  color: var(--header-light);
 }
 
 .dropotron {
@@ -2519,8 +2522,7 @@ button.alt:active,
   text-align: center;
   margin-top: 6em;
   padding-top: 4em;
-  font-size:x-small;
-
+  font-size: x-small;
 }
 
 /* XLarge */
@@ -2994,7 +2996,6 @@ button.alt:active,
 
   /* Copyright */
 
-
   #copyright .links {
     margin-bottom: 0;
   }
@@ -3004,7 +3005,6 @@ button.alt:active,
     padding-left: 0;
     margin-left: 0;
     border-left: 0;
-
   }
 }
 
@@ -3069,10 +3069,18 @@ button.alt:active,
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  -moz-transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-  -webkit-transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-  -ms-transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  -moz-transition:
+    box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  -webkit-transition:
+    box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  -ms-transition:
+    box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  transition:
+    box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
   margin: 0;
 }
 
