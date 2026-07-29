@@ -1625,6 +1625,17 @@ article:last-child {
   width: 100%;
 }
 
+/* Trophy image spacing and responsive defaults */
+.trophy-image {
+  display: block;
+  margin-bottom: 1rem;
+}
+.trophy-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .image.featured {
   display: block;
   width: 100%;
@@ -1833,16 +1844,32 @@ form :-moz-placeholder {
   color: #555 !important;
 }
 
-form ::-moz-placeholder {
+/* Placeholder styles: vendor fallbacks plus standard */
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
   color: #555 !important;
 }
 
-form :-ms-input-placeholder {
+form input::-moz-placeholder,
+form textarea::-moz-placeholder {
   color: #555 !important;
 }
 
-form ::-moz-focus-inner {
+form input:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  color: #555 !important;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #555 !important;
+}
+
+/* Keep focus-inner reset attached to inputs/buttons (Firefox) */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
   border: 0;
+  padding: 0;
 }
 
 /* Table */
