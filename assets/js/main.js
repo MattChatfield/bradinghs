@@ -37,9 +37,7 @@
 		// Title Bar.
 			$(
 				'<div id="titleBar">' +
-					'<button type="button" class="toggle" aria-controls="navPanel" aria-expanded="false" aria-label="Open navigation">' +
-						'<span class="sr-only">Open navigation</span>' +
-					'</button>' +
+					'<a href="#navPanel" class="toggle"></a>' +
 				'</div>'
 			)
 				.appendTo($body);
@@ -62,18 +60,6 @@
 					side: 'left',
 					target: $body,
 					visibleClass: 'navPanel-visible'
-				});
-
-				// Keep the toggle's aria-expanded state in sync with the panel visibility.
-				var $toggle = $('#titleBar').find('.toggle');
-
-				// Update the label and aria-expanded after panel opens/closes.
-				$toggle.on('click', function () {
-					setTimeout(function () {
-						var expanded = $body.hasClass('navPanel-visible');
-						$toggle.attr('aria-expanded', expanded ? 'true' : 'false');
-						$toggle.find('.sr-only').text(expanded ? 'Close navigation' : 'Open navigation');
-					}, 50);
 				});
 
 })(jQuery);
