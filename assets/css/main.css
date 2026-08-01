@@ -176,35 +176,6 @@ html {
   box-sizing: border-box;
 }
 
-/* Visually hidden (screen-reader-only) */
-.sr-only {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-/* Keep the generated toggle button visually identical to previous icon link */
-.toggle {
-  background: transparent;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  color: inherit;
-  font: inherit;
-}
-
-.toggle:focus {
-  outline: 3px solid var(--hover-colour);
-  outline-offset: 2px;
-}
-
 *,
 *:before,
 *:after {
