@@ -1,0 +1,6 @@
+# robots.txt for bradinghorticulturalsociety.org.uk
+User-agent: *
+Disallow:
+
+# Sitemap
+Sitemap: https://bradinghorticulturalsociety.org.uk/sitemap.xml
